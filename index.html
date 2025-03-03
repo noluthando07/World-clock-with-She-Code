@@ -2,20 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link src="stylesheet" href="style/style.css" />
-    <title>World clock</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>🌍 World Clock</h1>
+
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="Africa/Johannesburg">🇿🇦 Johannesburg</option>
+        <option value="America/Los_Angeles">🇺🇸 Los Angeles</option>
+        <option value="America/New_York">🇺🇸 New York</option>
+        <option value="Europe/London">🇬🇧 London</option>
+        <option value="Europe/Paris">🇫🇷 Paris</option>
+
+        <option value="Asia/Tokyo">🇯🇵 Tokyo</option>
+        <option value="Australia/Sydney">🇦🇺 Sydney</option>
+      </select>
+
+      <div id="cities">
+        <div class="city">
+          <div>
+            <h2>🇺🇸 Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city">
+          <div>
+            <h2>🇫🇷 Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city">
+          <div>
+            <h2>🇯🇵 Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+
     <footer>
-      This project was coded with Noluthandon and is ;
+      🌟 This project was created by <strong>Noluthando Nkosi</strong>
       <a
         href="https://github.com/noluthando07/World-clock-with-She-Code"
         target="_blank"
-        >open sourced on Github</a
+      >
+        <br />
+        Open-sourced on GitHub</a
       >
     </footer>
+
     <script src="javascript/index.js"></script>
   </body>
 </html>
